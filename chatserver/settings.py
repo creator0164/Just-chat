@@ -53,7 +53,9 @@ INSTALLED_APPS = [
     'friend.apps.FriendConfig',
     'public_chat.apps.PublicChatConfig',
     'notification.apps.NotificationConfig',
+    'crispy_forms',
 ]
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
