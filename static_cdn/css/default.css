@@ -1,0 +1,113 @@
+:root{
+    --main-background-color: #f2f2f2;
+    --dark-background-color: #a2a2a2;
+    --secondary-text-color: #808080;
+    --light-primary-text-color: #0080ff;
+
+    --mainColor: #eaeaea;
+    --secondaryColor:#fff ;
+
+    --boderColor: #c1c1c1;
+
+    --mainText: black;
+    --secondaryText: #4b5156;
+
+    --themeDotBorder:#24292e;
+
+    --previewBg: rgb(251, 249, 243, 0.8);
+
+    --previewShadow: #f0ead6;
+
+    --buttonColor: black;
+}
+
+html,body{
+padding: 0;
+margin: 0;
+}
+
+
+head{
+    font-family: "Segoe UI";
+    font-weight: 380;
+}
+
+footer{
+    font-family: "Segoe UI";
+    font-weight: 380;
+}
+
+
+body{
+    background-color: #f2f2f2;
+    font-family: "Segoe UI";
+    font-weight: 380;
+}
+
+h1, h2, h3, h4, h5, h6, strong{
+color:var(--mainText) ;
+font-family: 'Russo One', sans-serif;
+font-weight: 500;
+}
+
+p, li, span, label, input, textarea{
+color: var(--mainText);
+font-family: 'Roboto Mono', monospace;
+}
+
+a{
+    text-decoration: none;
+    color: #17a2b8;
+}
+
+ul{
+list-style: none;
+}
+
+h1{ font-size: 56px; }
+h2{ font-size: 36px; }
+h3{ font-size: 28px; }
+h4{ font-size: 24px; }
+h5{ font-size: 20px; }
+h6{ font-size: 16px; }
+
+.center-align{
+    align-content: center;
+}
+
+.header-head{
+    display: none;
+    align-items: center;
+}
+
+.hov:hover{
+    text-decoration: underline;
+    color: #17a2b8;
+}
+
+.icons-mr{
+    margin-right: 30px;
+}
+
+.card-signin {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="text"] {
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <title>Just Chat</title>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/default.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'cropperjs/dist/cropper.min.css' %}">
+    
+
+</head>
+<body>
+    
+    <!-- Header -->
+    {% include 'snippets/header.html' %}
+    <!-- Header End -->
+
+    <div class="container" id="id_loading_spinner" style="display :none;">
+        <div class="d-flex flex-row mx-auto flex-grow-1 justify-content-center">
+            <div class="spinner-border text-primary" role="status">
+                <span class="sr-only"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+        {% block content %}
+
+        {% endblock content %}
+    </div>
+    <!-- Main End -->
+
+    <!-- Footer -->
+    {% include 'snippets/footer.html' %}
+    <!-- Footer End -->
+
+    
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="{% static 'cropperjs/dist/cropper.min.js' %}"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        function displayLoadingSpinner(isDisplayed){
+            var spinner = document.getElementById("id_loading_spinner")
+            if(isDisplayed){
+                spinner.style.display = "block"
+            }
+            else{
+                spinner.style.display = "none"
+            }
+        }
+    </script>
+    
+
+</body>
+</html>
